@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Navbar</title>
+  <link rel="stylesheet" href="{% static '/static/css/nav.css' %}">
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">ShopEasy</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Categories</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li class="cart"><a href="#">Cart 🛒</a></li>
+    </ul>
+  </nav>
+
+
+{% block content%}
+
+
+
+
+
+{% endblock %}
+
+  <footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>ShopEasy</h3>
+      <p>Your one-stop online shop for everything you need!</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>Email: support@shopeasy.com</p>
+      <p>Phone: +91 123 456 7890</p>
+      <p>Address: 123 Market Street, City</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#">🌐</a>
+        <a href="#">🐦</a>
+        <a href="#">📘</a>
+        <a href="#">📸</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 ShopEasy. All rights reserved.
+  </div>
+</footer>
+</body>
+</html>
